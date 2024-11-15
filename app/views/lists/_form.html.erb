@@ -1,0 +1,7 @@
+<%= simple_form_for(@list) do |f| %>
+  <%= f.input :name %>
+  
+  <%= f.submit class: "btn btn-primary text-white"%>
+<% end %>
+<br>
+<%= link_to "All movies list", lists_path, class: "btn btn-primary text-white" %>

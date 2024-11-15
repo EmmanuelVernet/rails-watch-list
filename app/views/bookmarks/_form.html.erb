@@ -1,0 +1,6 @@
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.input :movie_id, collection: Movie.all, label_method: :title, value_method: :id, prompt: "Choose a movie" %>
+  <%= f.input :comment %>
+  <%= f.button :submit, class: "btn btn-primary text-white"%>
+<% end %>
+<%= link_to "All movies list", lists_path, class: "btn btn-primary text-white" %>
